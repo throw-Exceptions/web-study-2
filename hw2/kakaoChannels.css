@@ -1,0 +1,132 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.kakao-window {
+    width: 400px;
+    height: 700px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+}
+.tabs {
+    background-color: #322824;
+    width: 17%;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.window-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 25px;
+}
+.close-button {
+    background-color: #FD4646;
+    border: none;
+    border-radius: 50%;
+    width: 10px;
+    height: 12px;
+    cursor: pointer;
+}
+.minimize-button {
+    background-color: #FDB025;
+    border: none;
+    border-radius: 50%;
+    width: 10px;
+    height: 12px;
+    cursor: pointer;
+}
+.resize-button {
+    background-color: #2AC132;
+    border: none;
+    border-radius: 50%;
+    width: 10px;
+    height: 12px;
+    cursor: pointer;
+}
+.tab-buttons {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    height: 80%;
+}
+.tab-buttons > button {
+    border: none;
+    background-color: transparent;
+    color: #A59F9D;
+    font-size: 10px;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+}
+.setting-buttons {
+
+}
+.setting-buttons > button {
+    border: none;
+    background-color: transparent;
+    color: #A59F9D;
+    font-size: 8px;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+}
+.selected-button {
+    color: white !important;
+}
+.channel-list {
+    display: flex;
+    flex-direction: column;
+    width: 83%;
+}
+.channel-list-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 65px;
+}
+.options {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    color: #3C3B3C;
+}
+.sorting-option {
+    width: 100%;
+}
+.new-chat-option {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    font-size: 10px;
+    width: 20px;
+}
+.search {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+.search-input {
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    width: 90%;
+    padding-left: 7px;
+}
+.search-input > i {
+    font-size: 13px;
+}
+.search-input > input {
+    background-color: #F5F5F5;
+    border: none;
+}
+.search-input > input::placeholder {
+    color: #CDCDCD;
+}
