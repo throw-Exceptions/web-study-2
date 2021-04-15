@@ -148,8 +148,83 @@
 .channel-image {
     width: 50px;
     height: 50px;
-    border: 1px solid black;
+    position: relative;
 }
+.image-1 {
+    width: 80%;
+    height: 80%;
+    border-radius: 40%;
+    object-fit: cover;
+}
+.image-1.first {
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+.image-2 {
+    width: 60%;
+    height: 60%;
+    border-radius: 40%;
+    object-fit: cover;
+}
+.image-2.first {
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+.image-2.second {
+    position: relative;
+    left: 20px;
+    top: -15px;
+}
+.image-3 {
+    width: 50%;
+    height: 50%;
+    border-radius: 40%;
+    object-fit: cover;
+}
+.image-3.first {
+    position: relative;
+    left: 13px;
+    top: 0px;
+}
+.image-3.second {
+    position: relative;
+    left: 1px;
+    top: -10px;
+}
+.image-3.third {
+    position: relative;
+    left: 23px;
+    top: -40px;
+}
+.image-4 {
+    width: 40%;
+    height: 40%;
+    border-radius: 40%;
+    object-fit: cover;
+}
+.image-4.first {
+    position: relative;
+    left: 4px;
+    top: 2px;
+}
+.image-4.second {
+    position: relative;
+    left: 2px;
+    top: 2px;
+}
+.image-4.third {
+    position: relative;
+    left: 4px;
+    top: 0px;
+}
+.image-4.fourth {
+    position: relative;
+    left: 2px;
+    top: 0px;
+}
+
 .channel-contents {
     width: 210px;
     height: 50px;
