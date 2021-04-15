@@ -199,3 +199,6 @@
     text-align: center;
     line-height: 18px;
 }
+.unread-count.zero {
+    background-color: white;
+}
