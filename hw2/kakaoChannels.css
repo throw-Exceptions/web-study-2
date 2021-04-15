@@ -89,14 +89,14 @@
 .channel-list-header {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 65px;
-    padding: 8px 10px;
+    height: 60px;
+    padding: 10px;
 }
 .options {
     display: flex;
     flex-direction: row;
     color: #3C3B3C;
+    height: 100%;
 }
 .sorting-option {
     width: 100%;
@@ -113,6 +113,8 @@
     flex-direction: row;
     align-items: flex-end;
     justify-content: center;
+    position: relative;
+    bottom: 0;
 }
 .search-input {
     background-color: #F5F5F5;
