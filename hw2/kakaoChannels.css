@@ -7,7 +7,7 @@
 }
 .kakao-window {
     width: 400px;
-    height: 700px;
+    height: 650px;
     border: 1px solid black;
     border-radius: 10px;
     display: flex;
@@ -91,11 +91,11 @@
     flex-direction: column;
     justify-content: space-around;
     height: 65px;
+    padding: 8px 10px;
 }
 .options {
     display: flex;
     flex-direction: row;
-    padding: 10px;
     color: #3C3B3C;
 }
 .sorting-option {
@@ -117,7 +117,7 @@
 .search-input {
     background-color: #F5F5F5;
     border-radius: 5px;
-    width: 90%;
+    width: 100%;
     padding-left: 7px;
 }
 .search-input > i {
@@ -129,4 +129,71 @@
 }
 .search-input > input::placeholder {
     color: #CDCDCD;
+}
+.channel-list-body {
+    overflow: auto;
+}
+.channel {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+}
+.channel:hover {
+    background-color: #F6F6F6;
+}
+.channel-image {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+.channel-contents {
+    width: 210px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.channel-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: #2A2A2A;
+    margin-left: 10px;
+    display: flex;
+}
+.channel-participants {
+    font-size: 13px;
+    font-weight: bold;
+    color: #9D9D9D;
+    margin-left: 3px;
+}
+.channel-last-message {
+    font-size: 12px;
+    color: #7D7D7D;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+.channel-info {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.last-message-time {
+    font-size: 12px;
+    color: #ABABAB;
+}
+.unread-count {
+    font-size: 12px;
+    color: white;
+    background-color: #F54339;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
 }
