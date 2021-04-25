@@ -1,0 +1,180 @@
+html, body { width: 100%; height: 100%; padding: 0; margin: 0;}
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60px auto 200px 47px 46px;;
+}
+.header {
+    grid-row: 1/2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+}
+.gmail-link, .images-link {
+    color: #191919;
+    text-decoration: none;
+    margin-right: 0.8rem;
+}
+.gmail-link:hover, .images-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.google-apps {
+    position: relative;
+    border-radius: 50%;
+    width: 2.2rem;
+    height: 2.2rem;
+    border: none;
+    background-color: transparent;
+    margin-right: 0.5rem;
+}
+.google-apps:hover {
+    background-color: #ECECEC;
+    cursor: pointer;
+}
+.google-apps-icon {
+    position: relative;
+    top: -0.35rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 0.01rem;
+    line-height: 0.4rem;
+}
+.account-info {
+    border: none;
+    background-color: transparent;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-right: 0.5rem;
+}
+.account-info:hover {
+    background-color: #ECECEC;
+    cursor: pointer;
+}
+.account-info-letter {
+    background-color: #667D8B;
+    color: white;
+    font-size: 1.1rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: auto 280px 280px auto;
+    grid-template-rows: auto 90px 44px 36px 28px auto;
+    row-gap: 25px;
+    column-gap: 5px;
+}
+.logo {
+    grid-area: logo;
+    grid-row: 2/3;
+    grid-column: 2/4;
+    margin: 0 auto;
+    width: 17rem;
+}
+.logo > img {
+    width: 100%;
+}
+.search {
+    grid-area: search;
+    grid-row: 3/4;
+    grid-column: 2/4;
+    margin: 0 auto;
+    width: 100%;
+    height: 44px;
+    border: 1px solid #D7DADE;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+}
+.search .fa-search {
+    color: #888F95;
+    margin-left: 1rem;
+}
+.search > input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding-left: 1rem;
+}
+.search > .fa-microphone {
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.google-search {
+    grid-area: google-search;
+    grid-row: 4/5;
+    grid-column: 2/3;
+    justify-self: end;
+}
+.feeling-lucky {
+    grid-area: feeling-lucky;
+    grid-row: 4/5;
+    grid-column: 3/4;
+    justify-self: start;
+}
+.google-search, .feeling-lucky {
+    border: none;
+    outline: none;
+    background-color: #F6F7F9;
+    padding: 0.5rem 1rem;
+    color: #222326;
+    margin: 0 0.2rem;
+    width: fit-content;
+}
+.search-buttons > button:hover {
+    cursor: pointer;
+}
+.language {
+    grid-row: 5/6;
+    grid-column: 2/4;
+    margin: 0 auto;
+    font-size: 0.9rem;
+}
+.language > a {
+    text-decoration: none;
+    color: #13009B;
+}
+.language > a:hover {
+    text-decoration: underline;
+}
+.location {
+    grid-row: 4/5;
+    background-color: #EFEFEF;
+    border-bottom: 1px solid #D1D4D9;
+    color: #5C5C5C;
+    padding-left: 2rem;
+    display: grid;
+    align-items: center;
+}
+.links {
+    grid-row: 5/6;
+    background-color: #EFEFEF;
+    display: grid;
+    grid-template-columns: repeat(4, fit-content(120px)) auto repeat(3, fit-content(120px));
+    grid-gap: 25px;
+    padding: 0 30px;
+    align-items: center;
+    justify-items: center;
+}
+.links > a {
+    color: #5C5C5C;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.links > a:hover {
+    text-decoration: underline;
+}
