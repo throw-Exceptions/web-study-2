@@ -1,0 +1,117 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+header {
+  background-color: #999ac6;
+  color: #e8ebe4;
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+.main {
+  width: 100%;
+  height: calc(100% - 4.5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.todo-input {
+  border: 2.5px solid #999ac6;
+  border-radius: 1rem;
+  min-width: 20rem;
+  width: 50%;
+  max-width: 25rem;
+  height: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-input > input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: calc(100% - 2rem);
+  height: 1.5rem;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+  padding: 0 0.5rem;
+}
+.todo-input > input::placeholder {
+  font-size: 1rem;
+}
+.todo-input > i {
+  color: #999ac6;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.todo-list {
+  min-width: 20rem;
+  width: 50%;
+  max-width: 25rem;
+  height: calc(100% - 7rem);
+  border: 2px solid #999ac6;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  overflow: auto;
+}
+.todo-item {
+  display: flex;
+  width: 100%;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+  border-bottom: 2px solid #e8ebe4;
+}
+.todo-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 4rem);
+}
+.todo-text.done {
+  text-decoration: line-through;
+}
+.todo-item .fa-check,
+.todo-item .fa-trash-alt {
+  width: 2rem;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+footer {
+  height: 2rem;
+  width: 100%;
+  background-color: #d2d5dd;
+  color: #999ac6;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+footer > i {
+  font-size: 1.2rem;
+  margin-right: 0.3rem;
+}
