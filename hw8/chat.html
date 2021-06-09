@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <meta http-equiv="refresh" content="5"> -->
+    <meta charset="utf-8">
+    <meta lang="ko">
+    <link rel="stylesheet" href="chat.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="message-display">
+        <div class="message">
+          <div class="profile">
+            <i class="fas fa-user"></i>
+          </div>
+          <div>
+            <div class="name">
+              방장
+            </div>
+            <div class="contents">
+              안녕하세요, 가입인사 하셈 ㅎㅎ
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="message-input">
+        <section class="buttons">
+          <label for="image-input"><i class="far fa-image"></i></label>
+          <input type="file" accept="image/*" hidden id="image-input">
+        </section>
+        <section class="text">
+          <textarea id="text-contents"></textarea>
+          <button id="send-button">전송</button>
+        </section>
+      </div>
+    </section>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="chat.js"></script>
+  </body>
+</html>
